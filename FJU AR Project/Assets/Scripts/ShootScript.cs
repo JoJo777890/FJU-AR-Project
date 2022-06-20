@@ -12,7 +12,7 @@ public class ShootScript : MonoBehaviour
 
         if(Physics.Raycast(arCamera.transform.position, arCamera.transform.forward, out hit)) {
             
-            if(hit.transform.name == "Baloon 1(Clone)" || hit.transform.name == "Baloon 2(Clone)" || hit.transform.name == "Baloon 3(Clone)") {
+            if(hit.transform.tag == "Balloon") {
 
                 Destroy(hit.transform.gameObject);
 
