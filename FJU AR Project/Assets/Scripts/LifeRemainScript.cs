@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LifeRemainScript : MonoBehaviour
 {
@@ -16,5 +17,9 @@ public class LifeRemainScript : MonoBehaviour
 	void Update()
     {
         lifeRemainText.text = "Life Remain: " + lifeRemain.ToString();
+
+        if(lifeRemain == 0) {
+            SceneManager.LoadScene("Credit");
+		}
     }
 }

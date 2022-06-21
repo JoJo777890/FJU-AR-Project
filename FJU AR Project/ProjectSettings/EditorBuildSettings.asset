@@ -5,18 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: c9b185e4572e0124fb2bd66c42618205
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/CubeTest.unity
-    guid: e6c129ceffe7fc943b9be838cfeedb5b
-  - enabled: 0
-    path: Assets/Scenes/Placement Indicator/Placement Carnival.unity
-    guid: e954e1e9a6e410b4b8cd2b87c0a83fe9
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 7dd8c0b652cb8444480ae2dd650fb169
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 206df2a190edd2f4e9c1bcd4717664eb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a11f46333b09fb49b985405e42529a1, type: 2}
