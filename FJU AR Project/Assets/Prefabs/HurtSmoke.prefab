@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6267075189006793938}
   - component: {fileID: 3203777976417945890}
   m_Layer: 0
-  m_Name: Smoke
+  m_Name: HurtSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4873,7 +4873,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a3d77e0a6446cff41a2591073bdd323f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ad301077f3d9bba449fb176e6222b19a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

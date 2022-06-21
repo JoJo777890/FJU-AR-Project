@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class SpawnScript : MonoBehaviour
 {
-    public Transform[] SpawnPoints;
+    public int difficulty = 3;
+    public int roundsPerDifficulty = 3;
+
+    public Vector3 randomSpawnPoints;
     public GameObject[] Baloons;
 
     void Start()
@@ -13,12 +16,19 @@ public class SpawnScript : MonoBehaviour
     }
 
     IEnumerator StartSpawning() {
-        yield return new WaitForSeconds(4);
 
-		for (int i = 0; i < Baloons.Length; i++) {
+		for (int i = 0; i < roundsPerDifficulty; i++) {
 
-            Instantiate(Baloons[i], SpawnPoints[i].position, Quaternion.identity);
-		}
+            for (int j = 0; j < difficulty; j++) {
+                randomSpawnPoints = new Vector3(Random.Range(-1.25f, 1.25f), -1.0f, 1.5f);
+
+                Instantiate(Baloons[j % 3], randomSpawnPoints, Quaternion.identity);
+            }
+
+            yield return new WaitForSeconds(5);
+        }
+
+        difficulty++;
 
         StartCoroutine(StartSpawning());
 	}
