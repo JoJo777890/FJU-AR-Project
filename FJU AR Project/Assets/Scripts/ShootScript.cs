@@ -7,8 +7,6 @@ public class ShootScript : MonoBehaviour
     public GameObject arCamera;
     public GameObject smoke;
 
-    public ScoreScript scoreScript;
-
     public void Shoot() {
         RaycastHit hit;
 
@@ -20,7 +18,7 @@ public class ShootScript : MonoBehaviour
 
                 Instantiate(smoke, hit.point, Quaternion.LookRotation(hit.normal));
 
-                scoreScript.score++;
+                ScoreScript.score++;
 			}
 		}
 	}

@@ -19,7 +19,7 @@ public class LifeRemainScript : MonoBehaviour
         lifeRemainText.text = "Life Remain: " + lifeRemain.ToString();
 
         if(lifeRemain == 0) {
-            SceneManager.LoadScene("Credit");
+            SceneManager.LoadScene("GameOver");
 		}
     }
 }

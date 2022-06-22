@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnScript : MonoBehaviour
 {
     public int difficulty = 3;
-    public int roundsPerDifficulty = 3;
+    public int roundsPerDifficulty = 2;
 
     public Vector3 randomSpawnPoints;
     public GameObject[] Baloons;

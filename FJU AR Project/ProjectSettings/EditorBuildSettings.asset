@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: bbc53d898592f774db250294d4e16044
+  - enabled: 1
     path: Assets/Scenes/Credit.unity
-    guid: 7dd8c0b652cb8444480ae2dd650fb169
+    guid: 6cadca35b6ce8854b9874e1cc865881d
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 206df2a190edd2f4e9c1bcd4717664eb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a11f46333b09fb49b985405e42529a1, type: 2}
